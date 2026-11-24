@@ -81,3 +81,66 @@ pola pemenang hari-hari sebelumnya (brief koordinator), dan entry kita sendiri.
 
 - Rank: top 10 plausible, top 25 likely. Peluang top 50: ~50%+.
 - Estimasi ini WAJIB dikonfirmasi/dikoreksi Goldfish — bukan angka final.
+
+## UPDATE RONDE 1 — 25 Nov ~02:45 WIB (builder revisi r2, setelah melihat gambar pemenang)
+
+**Hasil ronde 1 (blind): entry kita rank 4805 dari 7302, skor judge 458194.**
+Cutoff ronde 1: rank 1 = 863545, rank 10 = 803073, rank 50 = 654221.
+Gap kita ke top-50: **+196.027 poin**. Estimasi dev-phase (top 10–25) terbukti
+salah total — yang menentukan hanya pola pemenang nyata ronde 1, dan pola itu
+saya verifikasi langsung dari file gambar pemenang (r1/r2/r3/r5, 1024x1024).
+
+**Yang saya lihat di gambar pemenang (pengamatan sendiri):**
+
+- **r1 (Darren, 863545):** masthead serif raksasa "Tuesday 24 November 2026" +
+  strip "34 STORIES • 9 REGIONS • 21 FIELDS • EVERY ONE DATED TUE 24 NOV 2026".
+  Region bar 10 segmen yang jumlahnya rekonsiliasi persis (EUROPE 6, MIDDLE EAST 4,
+  AFRICA 3, EAST ASIA 5, SOUTH ASIA 2, SE ASIA 2, OCEANIA 5, N. AMERICA 3,
+  LATIN AMERICA 3, WORLD 1 = 34). Strip timeline UTC + strip "THE DAY IN NUMBERS"
+  (6 statistik). 3 hero besar dengan ilustrasi vector (tanker terbakar di laut,
+  bar chart pasar saham, drone di atas kota malam) + headline + dek + sumber +
+  badge status (CLAIM / CONFIRMED / OFFICIAL / REPORTED). 10 panel sekunder
+  (#4–13) masing-masing berilustrasi kecil. "ALSO ON TUESDAY 24 NOVEMBER" #14–34
+  satu baris per cerita. "WHERE IT HAPPENED": peta dunia tan/beige + pin bernomor
+  merah. Footer "DATE CHECK": klaim tanggal eksplisit + daftar cerita yang SENGAJA
+  DIKECUALIKAN karena terjadi hari sebelumnya (Nvidia/Huang, COP31, kapal Benghazi).
+- **r2 (35 cerita, 14 fields):** pola sama, hero Sanofi $41bn Insmed, Korea
+  air-alert, Hormuz; 8 panel sekunder bergambar besar; DATE CHECK dengan daftar
+  "left out" + "not yet" yang jujur.
+- **r3 (40 cerita):** hero pasar Asia + Hormuz + Ulleung; strip "THE DAY, HOUR
+  BY HOUR"; 10 panel sekunder; DATE CHECK "LEFT OUT ON PURPOSE — OTHER DAYS'
+  NEWS, KEPT OUT".
+- **r5 (37 cerita):** hero pasar Asia + Shenzhou-24 + kobalt Kongo; peta +
+  "ALSO ON" 2 kolom; DATE CHECK "STRICT TUESDAY 24 NOVEMBER 2026 (00:00–24:00
+  UTC) AUDIT" + daftar eksklusi.
+
+**Kesimpulan pola:** pemenang = **koran bergambar** (13 cerita bergambar + 21
+listed + peta + angka + timeline + DATE CHECK yang jujur), BUKAN grid teks polos.
+Rank 1 juga 34 cerita — jumlah cerita bukan pembeda; craft visual + struktur
+yang membedakan. Tiga hal yang konsisten di semua pemenang: (1) ilustrasi vector
+di SEMUA 13 cerita utama, (2) badge status per cerita (CONFIRMED/OFFICIAL/
+REPORTED/CLAIM) dengan legenda "HOW SURE", (3) DATE CHECK yang mengakui
+eksklusi secara eksplisit — kejujuran tanggal itu sendiri dinilai.
+
+**Gap kita (r1/r4) vs pemenang:**
+
+| # | Gap | Dampak |
+|---|-----|--------|
+| 1 | Tanpa ilustrasi sama sekali (grid teks polos) | Kalah telak di craft visual — pembeda utama ronde 1 |
+| 2 | Tanpa peta, tanpa timeline, tanpa strip angka | Struktur koran tidak ada; entry terbaca sebagai daftar |
+| 3 | Tanpa badge status per cerita | Tidak ada sinyal kepercayaan per item |
+| 4 | Oseania 0 cerita | Region bar tidak bisa rekonsiliasi 9 region |
+| 5 | Region tidak direkonsiliasi (tidak ada region bar) | Breadth tidak terbukti di gambar |
+| 6 | ~16/34 item pertama dilaporkan 22–23 Nov, banner menyangkal | Kriteria #1/#3; pemenang justru menulis eksklusi di DATE CHECK |
+| 7 | Cerita Senin di posisi teratas (#1 Huang) | Judge langsung melihat "berita kemarin" di hero |
+
+**Rencana r2 (satu ronde perbaikan, berat):** rebuild total mengikuti template
+pemenang — masthead + strip + region bar (9 region + WORLD, rekonsiliasi 34) +
+timeline UTC + THE DAY IN NUMBERS + 3 hero berilustrasi + 10 panel sekunder
+berilustrasi + ALSO #14–34 + peta dunia berpin 1–13 + footer DATE CHECK dengan
+daftar eksklusi jujur. Riset ulang penuh hari Selasa 24 Nov (hari sudah lengkap):
+16 item Senin diganti/dibingkai ulang sebagai perkembangan Selasa; standar
+tanggal ketat (terjadi atau pertama dilaporkan Selasa 24 Nov, UTC atau lokal).
+Oseania 5 cerita (Wong AI, Rarotonga, Vanuatu, T20, tech fines). Estimasi jujur
+ditulis di build-log §8 — bandingkan langsung dengan gambar r1/r5, sebut di mana
+r2 masih kalah dari mereka.
